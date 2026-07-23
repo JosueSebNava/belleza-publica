@@ -35,13 +35,13 @@ cd belleza-publica
 ### 2. Instalar las dependencias
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 3. Iniciar el servidor de desarrollo
 
 ```bash
-npm start
+pnpm start
 ```
 
 La aplicación estará disponible en:
