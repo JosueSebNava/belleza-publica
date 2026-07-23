@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Atelier Beauty | Uñas y Pestañas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio Luna Atelier">
+        <span class="brand-mark">LA</span>
+        <span>
+          <strong>Luna Atelier</strong>
+          <small>Uñas · Pestañas · Cuidado</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#agenda">Agendar</a>
+      </nav>
+      <div class="auth-actions" id="authActions">
+        <button class="ghost-btn" data-open-auth="login">Login</button>
+        <button class="solid-btn" data-open-auth="register">Registrarse</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Estudio público de belleza</p>
+          <h1>Diseño de uñas y pestañas con agenda inteligente.</h1>
+          <p class="hero-text">
+            Reserva tu cita, guarda tus datos para próximas visitas, elige modelos de tendencia y recibe un recordatorio en tu correo vinculado.
+          </p>
+          <div class="hero-buttons">
+            <a class="solid-btn large" href="#agenda">Agendar una cita</a>
+            <a class="ghost-btn large" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Muestra visual de servicios">
+          <div class="polish-orbit"></div>
+          <div class="beauty-ticket">
+            <span>Hoy</span>
+            <strong>Manicure + lifting de pestañas</strong>
+            <small>10:30 AM · Cabina 2</small>
+          </div>
+          <div class="sample-grid">
+            <span>Gel</span>
+            <span>Acrílicas</span>
+            <span>Volumen</span>
+            <span>Lifting</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow">Creación y cuidado</p>
+          <h2>Servicios principales</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card nails">
+            <span class="service-number">01</span>
+            <h3>Uñas esculturales</h3>
+            <p>Acrílicas, gel, soft gel, refill y diseños personalizados para cada ocasión.</p>
+            <strong>Desde $35</strong>
+          </article>
+          <article class="service-card manicure">
+            <span class="service-number">02</span>
+            <h3>Manicure spa</h3>
+            <p>Limpieza, exfoliación, hidratación, esmaltado tradicional o semipermanente.</p>
+            <strong>Desde $20</strong>
+          </article>
+          <article class="service-card lashes">
+            <span class="service-number">03</span>
+            <h3>Extensiones de pestañas</h3>
+            <p>Clásicas, híbridas, volumen y retoque con acabado natural o glam.</p>
+            <strong>Desde $45</strong>
+          </article>
+          <article class="service-card lifting">
+            <span class="service-number">04</span>
+            <h3>Lifting y tinte</h3>
+            <p>Curvatura, definición y color para resaltar tus pestañas sin extensiones.</p>
+            <strong>Desde $30</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Rosa & dorado</p>
+            <h2>Catálogo de modelos en tendencia</h2>
+          </div>
+          <p class="catalog-intro">Inspiraciones elegantes que el cliente puede mencionar al agendar su cita.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="model-card">
+            <div class="model-visual french">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="model-info">
+              <small>Uñas · Gel</small>
+              <h3>French rosé dorado</h3>
+              <p>Base nude rosada con línea francesa fina y detalle metálico dorado.</p>
+            </div>
+          </article>
+          <article class="model-card featured">
+            <div class="model-visual chrome">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="model-info">
+              <small>Uñas · Acrílicas</small>
+              <h3>Almond chrome glam</h3>
+              <p>Forma almendra, brillo perlado y acentos dorados para eventos.</p>
+            </div>
+          </article>
+          <article class="model-card">
+            <div class="model-visual floral">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="model-info">
+              <small>Uñas · Nail art</small>
+              <h3>Flor mini luxury</h3>
+              <p>Diseño delicado con flores pequeñas, puntos de luz y acabado gloss.</p>
+            </div>
+          </article>
+          <article class="model-card">
+            <div class="lash-visual classic">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="model-info">
+              <small>Pestañas · Natural</small>
+              <h3>Classic soft</h3>
+              <p>Extensión ligera para alargar la mirada con efecto natural diario.</p>
+            </div>
+          </article>
+          <article class="model-card">
+            <div class="lash-visual wet">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="model-info">
+              <small>Pestañas · Tendencia</small>
+              <h3>Wet look</h3>
+              <p>Puntas definidas con textura sofisticada y volumen controlado.</p>
+            </div>
+          </article>
+          <article class="model-card">
+            <div class="lash-visual volume">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="model-info">
+              <small>Pestañas · Glam</small>
+              <h3>Volumen elegante</h3>
+              <p>Abanicos suaves para una mirada intensa sin perder refinamiento.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="location-section" id="ubicacion">
+        <div class="location-copy">
+          <p class="eyebrow">Visítanos</p>
+          <h2>Ubicación del local</h2>
+          <p>Av. Belleza 123, Local 4, Centro. Actualiza esta dirección con la ubicación real del negocio.</p>
+          <ul class="info-list">
+            <li><span>Horario</span>Lunes a sábado · 9:00 AM - 7:00 PM</li>
+            <li><span>Teléfono</span>+1 000 000 0000</li>
+            <li><span>Estacionamiento</span>Disponible frente al local</li>
+          </ul>
+        </div>
+        <div class="map-card" aria-label="Mapa decorativo del local">
+          <div class="map-pin">Local</div>
+          <div class="map-line one"></div>
+          <div class="map-line two"></div>
+          <div class="map-line three"></div>
+          <div class="map-caption">Mapa de referencia</div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="agenda">
+        <div class="section-heading compact">
+          <p class="eyebrow">Agenda pública</p>
+          <h2>Reserva tu próxima visita</h2>
+          <p>Si inicias sesión, la página recordará tus datos y los reutilizará en futuras citas.</p>
+        </div>
+        <div class="booking-layout">
+          <form class="booking-form" id="bookingForm">
+            <label>
+              Nombre completo
+              <input name="name" id="bookingName" placeholder="Tu nombre" autocomplete="name" required />
+            </label>
+            <label>
+              Correo vinculado
+              <input name="email" id="bookingEmail" type="email" placeholder="tu@email.com" autocomplete="email" required />
+            </label>
+            <label>
+              Teléfono
+              <input name="phone" id="bookingPhone" placeholder="Número de contacto" autocomplete="tel" />
+            </label>
+            <label>
+              Servicio
+              <select name="service" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Uñas acrílicas</option>
+                <option>Gel semipermanente</option>
+                <option>Manicure spa</option>
+                <option>Extensiones de pestañas</option>
+                <option>Lifting y tinte de pestañas</option>
+                <option>Modelo French rosé dorado</option>
+                <option>Modelo Almond chrome glam</option>
+                <option>Modelo Wet look pestañas</option>
+              </select>
+            </label>
+            <label>
+              Fecha
+              <input name="date" type="date" required />
+            </label>
+            <label>
+              Hora
+              <input name="time" type="time" required />
+            </label>
+            <label class="full">
+              Detalles opcionales
+              <textarea name="notes" rows="4" placeholder="Diseño, referencia, alergias o indicaciones"></textarea>
+            </label>
+            <button class="solid-btn large full" type="submit">Confirmar cita</button>
+            <p class="form-note" id="bookingNote">Para agendar, inicia sesión o regístrate como cliente.</p>
+          </form>
+          <aside class="panel">
+            <h3>Panel de cliente</h3>
+            <p id="clientSummary">No has iniciado sesión.</p>
+            <div id="clientAppointments" class="mini-list"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="staff-section" id="staffPanel" hidden>
+        <div class="section-heading compact">
+          <p class="eyebrow">Miembro del local</p>
+          <h2>Citas registradas</h2>
+          <p>Vista privada para revisar nombre del cliente, servicio, fecha y hora.</p>
+        </div>
+        <div class="staff-toolbar">
+          <span>Credencial demo: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c6f687d7a7a5c70737f7d70327f7371">[email&#160;protected]</a> / Local1234</span>
+          <button class="ghost-btn" id="refreshAppointments">Actualizar</button>
+        </div>
+        <div class="appointment-table" id="appointmentTable"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>Luna Atelier Beauty</strong>
+      <span>Prototipo público con login, registro, agenda y panel del local.</span>
+    </footer>
+
+    <dialog class="auth-modal" id="authModal">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar">×</button>
+      <div class="modal-tabs">
+        <button class="tab active" data-tab="login">Login</button>
+        <button class="tab" data-tab="register">Registrarse</button>
+      </div>
+
+      <section class="tab-panel active" data-panel="login">
+        <h2>Entrar a tu cuenta</h2>
+        <p>Clientes pueden agendar. Miembros del local pueden revisar citas.</p>
+        <form id="loginForm" class="modal-form">
+          <div class="role-toggle">
+            <label><input type="radio" name="role" value="client" checked /> Cliente</label>
+            <label><input type="radio" name="role" value="staff" /> Miembro del local</label>
+          </div>
+          <input name="email" type="email" placeholder="Correo electrónico" required />
+          <input name="password" type="password" placeholder="Contraseña" required />
+          <button class="solid-btn" type="submit">Ingresar</button>
+        </form>
+        <div class="social-login">
+          <span>O entra como cliente con</span>
+          <button class="social google" data-provider="google">Google</button>
+          <button class="social facebook" data-provider="facebook">Facebook</button>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="register">
+        <h2>Crear cuenta de cliente</h2>
+        <p>Guarda tus datos para que la agenda los recuerde automáticamente.</p>
+        <form id="registerForm" class="modal-form">
+          <input name="name" placeholder="Nombre completo" autocomplete="name" required />
+          <input name="email" type="email" placeholder="Correo electrónico" autocomplete="email" required />
+          <input name="phone" placeholder="Teléfono" autocomplete="tel" />
+          <input name="password" type="password" placeholder="Contraseña mínimo 6 caracteres" required minlength="6" />
+          <button class="solid-btn" type="submit">Registrarme</button>
+        </form>
+        <p class="small-print">El acceso de miembros del local se crea por administración para proteger las citas.</p>
+      </section>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js"></script>
+  </body>
+</html>

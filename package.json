@@ -1,0 +1,22 @@
+{
+  "name": "luna-atelier-beauty",
+  "version": "1.0.0",
+  "description": "Página pública para local de uñas y pestañas con frontend, backend, login y agenda de citas.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check backend/server.js && node --check backend/auth.js && node --check backend/database.js && node --check frontend/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "beauty",
+    "appointments",
+    "frontend",
+    "backend"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elohim | Estudio de uñas y pestañas</title>
+    <link rel="icon" type="image/png" href="assets/brand/elohim-favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio Elohim Estudio de uñas y pestañas">
+        <span class="brand-mark logo-mark">
+          <img src="assets/brand/elohim-logo.webp" alt="Logo Elohim Estudio de uñas y pestañas" />
+        </span>
+        <span>
+          <strong>Elohim</strong>
+          <small>Estudio de uñas · pestañas</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#agenda">Agendar</a>
+      </nav>
+      <div class="auth-actions" id="authActions">
+        <button class="ghost-btn" data-open-auth="login">Login</button>
+        <button class="solid-btn" data-open-auth="register">Registrarse</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Estudio público de belleza</p>
+          <h1>Diseño de uñas y pestañas con agenda inteligente.</h1>
+          <p class="hero-text">
+            Reserva tu cita, guarda tus datos para próximas visitas, elige modelos de tendencia y recibe un recordatorio en tu correo vinculado.
+          </p>
+          <div class="hero-buttons">
+            <a class="solid-btn large" href="#agenda">Agendar una cita</a>
+            <a class="ghost-btn large" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero-card hero-carousel" aria-label="Carrusel de trabajos realizados">
+          <div class="carousel-track" id="heroCarousel">
+            <figure class="carousel-slide active">
+              <img src="assets/catalog/unas-french-dorado.webp" alt="Modelo de uñas french rosado con detalles dorados" />
+              <figcaption>
+                <span>Uñas tendencia</span>
+                <strong>French rosé dorado</strong>
+              </figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/catalog/unas-glitter-nude.webp" alt="Uñas nude con brillo y forma almendra" />
+              <figcaption>
+                <span>Uñas glam</span>
+                <strong>Glitter nude almond</strong>
+              </figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/catalog/pestanas-glam.webp" alt="Extensiones de pestañas volumen glam" />
+              <figcaption>
+                <span>Pestañas</span>
+                <strong>Volumen glam elegante</strong>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls" aria-label="Controles del carrusel">
+            <button type="button" class="carousel-btn" data-carousel-prev aria-label="Imagen anterior">‹</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button type="button" class="carousel-btn" data-carousel-next aria-label="Imagen siguiente">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow">Creación y cuidado</p>
+          <h2>Servicios principales</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card nails">
+            <span class="service-number">01</span>
+            <h3>Uñas esculturales</h3>
+            <p>Acrílicas, gel, soft gel, refill y diseños personalizados para cada ocasión.</p>
+            <strong>Desde $35</strong>
+            <button class="whatsapp-btn" type="button" data-whatsapp-service="Uñas esculturales">Reservar por WhatsApp</button>
+          </article>
+          <article class="service-card manicure">
+            <span class="service-number">02</span>
+            <h3>Manicure spa</h3>
+            <p>Limpieza, exfoliación, hidratación, esmaltado tradicional o semipermanente.</p>
+            <strong>Desde $20</strong>
+            <button class="whatsapp-btn" type="button" data-whatsapp-service="Manicure spa">Reservar por WhatsApp</button>
+          </article>
+          <article class="service-card lashes">
+            <span class="service-number">03</span>
+            <h3>Extensiones de pestañas</h3>
+            <p>Clásicas, híbridas, volumen y retoque con acabado natural o glam.</p>
+            <strong>Desde $45</strong>
+            <button class="whatsapp-btn" type="button" data-whatsapp-service="Extensiones de pestañas">Reservar por WhatsApp</button>
+          </article>
+          <article class="service-card lifting">
+            <span class="service-number">04</span>
+            <h3>Lifting y tinte</h3>
+            <p>Curvatura, definición y color para resaltar tus pestañas sin extensiones.</p>
+            <strong>Desde $30</strong>
+            <button class="whatsapp-btn" type="button" data-whatsapp-service="Lifting y tinte">Reservar por WhatsApp</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Rosa & dorado</p>
+            <h2>Catálogo de modelos en tendencia</h2>
+          </div>
+          <p class="catalog-intro">Inspiraciones elegantes que el cliente puede mencionar al agendar su cita.</p>
+        </div>
+        <div class="catalog-block">
+          <div class="catalog-title-row">
+            <span>01</span>
+            <h3>Uñas</h3>
+          </div>
+          <div class="catalog-grid">
+            <article class="model-card">
+              <img src="assets/catalog/unas-french-dorado-thumb.webp" data-full="assets/catalog/unas-french-dorado.webp" alt="Uñas french rosadas con detalles dorados" loading="lazy" />
+              <div class="model-info">
+                <small>Uñas · Gel</small>
+                <h3>French rosé dorado</h3>
+                <p>Base nude rosada, punta francesa blanca y acentos dorados.</p>
+                <button class="whatsapp-btn compact" type="button" data-whatsapp-service="Modelo French rosé dorado">Reservar por WhatsApp</button>
+              </div>
+            </article>
+            <article class="model-card featured">
+              <img src="assets/catalog/unas-glitter-nude-thumb.webp" data-full="assets/catalog/unas-glitter-nude.webp" alt="Uñas nude con glitter y forma almendra" loading="lazy" />
+              <div class="model-info">
+                <small>Uñas · Acrílicas</small>
+                <h3>Glitter nude almond</h3>
+                <p>Forma almendra con brillo delicado para un acabado glam.</p>
+                <button class="whatsapp-btn compact" type="button" data-whatsapp-service="Modelo Glitter nude almond">Reservar por WhatsApp</button>
+              </div>
+            </article>
+            <article class="model-card">
+              <img src="assets/catalog/unas-chrome-rosa-thumb.webp" data-full="assets/catalog/unas-chrome-rosa.webp" alt="Uñas rosadas con chrome y líneas doradas" loading="lazy" />
+              <div class="model-info">
+                <small>Uñas · Chrome</small>
+                <h3>Chrome rosa luxury</h3>
+                <p>Brillo perlado, efecto chrome y líneas doradas modernas.</p>
+                <button class="whatsapp-btn compact" type="button" data-whatsapp-service="Modelo Chrome rosa luxury">Reservar por WhatsApp</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="catalog-block">
+          <div class="catalog-title-row">
+            <span>02</span>
+            <h3>Pestañas</h3>
+          </div>
+          <div class="catalog-grid">
+            <article class="model-card">
+              <img src="assets/catalog/pestanas-natural-thumb.webp" data-full="assets/catalog/pestanas-natural.webp" alt="Pestañas naturales con acabado suave" loading="lazy" />
+              <div class="model-info">
+                <small>Pestañas · Natural</small>
+                <h3>Classic soft</h3>
+                <p>Extensión ligera para alargar la mirada con efecto natural.</p>
+                <button class="whatsapp-btn compact" type="button" data-whatsapp-service="Pestañas Classic soft">Reservar por WhatsApp</button>
+              </div>
+            </article>
+            <article class="model-card">
+              <img src="assets/catalog/pestanas-volumen-espejo-thumb.webp" data-full="assets/catalog/pestanas-volumen-espejo.webp" alt="Pestañas volumen vistas en espejo" loading="lazy" />
+              <div class="model-info">
+                <small>Pestañas · Volumen</small>
+                <h3>Volumen espejo</h3>
+                <p>Mirada marcada con abanicos definidos y acabado profesional.</p>
+                <button class="whatsapp-btn compact" type="button" data-whatsapp-service="Pestañas Volumen espejo">Reservar por WhatsApp</button>
+              </div>
+            </article>
+            <article class="model-card featured">
+              <img src="assets/catalog/pestanas-glam-thumb.webp" data-full="assets/catalog/pestanas-glam.webp" alt="Extensiones de pestañas glam" loading="lazy" />
+              <div class="model-info">
+                <small>Pestañas · Glam</small>
+                <h3>Volumen glam elegante</h3>
+                <p>Volumen intenso, curvatura visible y efecto sofisticado.</p>
+                <button class="whatsapp-btn compact" type="button" data-whatsapp-service="Pestañas Volumen glam elegante">Reservar por WhatsApp</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section" id="ubicacion">
+        <div class="location-copy">
+          <p class="eyebrow">Visítanos</p>
+          <h2>Ubicación en tiempo real</h2>
+          <p>Benito Juárez 284, San Miguel Acambay, 50305 Villa de Acambay de Ruíz Castañeda, Méx.</p>
+          <ul class="info-list">
+            <li><span>Horario</span>Lunes a sábado · 9:00 AM - 7:00 PM</li>
+            <li><span>Teléfono</span>+1 000 000 0000</li>
+            <li><span>Mapa</span>Consulta la ubicación actual directamente desde Google Maps.</li>
+          </ul>
+        </div>
+        <div class="map-card live-map-card" aria-label="Mapa en tiempo real del local">
+          <iframe
+            title="Ubicación del local en Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120009.29993500616!2d-99.99426019397895!3d19.95427655640193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d25700386d6075%3A0x1821099ce3d816ff!2sTortillas%20a%20mano!5e0!3m2!1ses-419!2smx!4v1784776687204!5m2!1ses-419!2smx"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+          <div class="map-badge">
+            <span>Google Maps</span>
+            <strong>Benito Juárez 284</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="agenda">
+        <div class="section-heading compact">
+          <p class="eyebrow">Agenda pública</p>
+          <h2>Reserva tu próxima visita</h2>
+          <p>Si inicias sesión, la página recordará tus datos y los reutilizará en futuras citas.</p>
+        </div>
+        <div class="booking-layout">
+          <form class="booking-form" id="bookingForm">
+            <label>
+              Nombre completo
+              <input name="name" id="bookingName" placeholder="Tu nombre" autocomplete="name" required />
+            </label>
+            <label>
+              Correo vinculado
+              <input name="email" id="bookingEmail" type="email" placeholder="tu@email.com" autocomplete="email" required />
+            </label>
+            <label>
+              Teléfono
+              <input name="phone" id="bookingPhone" placeholder="Número de contacto" autocomplete="tel" />
+            </label>
+            <label>
+              Servicio
+              <select name="service" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Uñas acrílicas</option>
+                <option>Gel semipermanente</option>
+                <option>Manicure spa</option>
+                <option>Extensiones de pestañas</option>
+                <option>Lifting y tinte de pestañas</option>
+                <option>Modelo French rosé dorado</option>
+                <option>Modelo Glitter nude almond</option>
+                <option>Modelo Chrome rosa luxury</option>
+                <option>Pestañas Classic soft</option>
+                <option>Pestañas Volumen espejo</option>
+                <option>Pestañas Volumen glam elegante</option>
+              </select>
+            </label>
+            <label>
+              Fecha
+              <input name="date" type="date" required />
+            </label>
+            <label>
+              Hora
+              <input name="time" type="time" required />
+            </label>
+            <label class="full">
+              Detalles opcionales
+              <textarea name="notes" rows="4" placeholder="Diseño, referencia, alergias o indicaciones"></textarea>
+            </label>
+            <button class="solid-btn large full" type="submit">Confirmar cita</button>
+            <p class="form-note" id="bookingNote">Para agendar, inicia sesión o regístrate como cliente.</p>
+          </form>
+          <aside class="panel">
+            <h3>Panel de cliente</h3>
+            <p id="clientSummary">No has iniciado sesión.</p>
+            <div id="clientAppointments" class="mini-list"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="staff-section" id="staffPanel" hidden>
+        <div class="section-heading compact">
+          <p class="eyebrow">Miembro del local</p>
+          <h2>Citas registradas</h2>
+          <p>Vista privada para revisar nombre del cliente, servicio, fecha y hora.</p>
+        </div>
+        <div class="staff-toolbar">
+          <span>Credencial demo: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="631017020505230f0c00020f4d000c0e">[email&#160;protected]</a> / Local1234</span>
+          <button class="ghost-btn" id="refreshAppointments">Actualizar</button>
+        </div>
+        <div class="appointment-table" id="appointmentTable"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>Elohim Estudio de uñas y pestañas</strong>
+      <span>Prototipo público con login, registro, agenda y panel del local.</span>
+    </footer>
+
+    <dialog class="auth-modal" id="authModal">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar">×</button>
+      <div class="modal-tabs">
+        <button class="tab active" data-tab="login">Login</button>
+        <button class="tab" data-tab="register">Registrarse</button>
+      </div>
+
+      <section class="tab-panel active" data-panel="login">
+        <h2>Entrar a tu cuenta</h2>
+        <p>Clientes pueden agendar. Miembros del local pueden revisar citas.</p>
+        <form id="loginForm" class="modal-form">
+          <div class="role-toggle">
+            <label><input type="radio" name="role" value="client" checked /> Cliente</label>
+            <label><input type="radio" name="role" value="staff" /> Miembro del local</label>
+          </div>
+          <input name="email" type="email" placeholder="Correo electrónico" required />
+          <input name="password" type="password" placeholder="Contraseña" required />
+          <button class="solid-btn" type="submit">Ingresar</button>
+        </form>
+        <div class="social-login">
+          <span>O entra como cliente con</span>
+          <button class="social google" data-provider="google">Google</button>
+          <button class="social facebook" data-provider="facebook">Facebook</button>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="register">
+        <h2>Crear cuenta de cliente</h2>
+        <p>Guarda tus datos para que la agenda los recuerde automáticamente.</p>
+        <form id="registerForm" class="modal-form">
+          <input name="name" placeholder="Nombre completo" autocomplete="name" required />
+          <input name="email" type="email" placeholder="Correo electrónico" autocomplete="email" required />
+          <input name="phone" placeholder="Teléfono" autocomplete="tel" />
+          <input name="password" type="password" placeholder="Contraseña mínimo 6 caracteres" required minlength="6" />
+          <button class="solid-btn" type="submit">Registrarme</button>
+        </form>
+        <p class="small-print">El acceso de miembros del local se crea por administración para proteger las citas.</p>
+      </section>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js"></script>
+  </body>
+</html>
