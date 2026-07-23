@@ -70,7 +70,7 @@ La aplicación está optimizada para desplegarse fácilmente en **Render**.
 1. Conecta este repositorio a tu cuenta de Render.
 2. Configura el comando de compilación:
    ```bash
-   npm install
+   pnpm install
    ```
 3. Configura el comando de inicio:
    ```bash
